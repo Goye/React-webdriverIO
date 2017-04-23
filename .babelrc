@@ -1,0 +1,22 @@
+{
+    "presets": [
+        ["babel-preset-es2015", {"modules": false}],
+        "react",
+        "stage-1"
+    ],
+    "env": {
+        "plugins": [
+            "react-hot-loader/babel"
+        ],
+        "test": {
+            "plugins": [
+                [
+                    "__coverage__",
+                    {
+                        "ignore": "*.test.*"
+                    }
+                ]
+            ]
+        }
+    }
+}
